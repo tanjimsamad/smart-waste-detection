@@ -1,0 +1,6 @@
+Metric,CNN,YOLO
+Precision,0.7324,0.9461
+Recall,0.7246,0.914
+F1-score,0.7241,0.9298
+mAP@50,,0.9576
+mAP@50-95,,0.8307

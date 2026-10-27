@@ -1,0 +1,95 @@
+{
+  "dataset": {
+    "source": "Roboflow Universe: object-detection-cfmul/waste-detection-0momv v1",
+    "license": "CC BY 4.0",
+    "classes": [
+      "Garbage_Bag",
+      "Glass",
+      "Paper_Bag",
+      "Pet_Bottle",
+      "Plastic_Bag",
+      "can"
+    ],
+    "images": {
+      "train": 3337,
+      "valid": 959,
+      "test": 477
+    },
+    "objects": {
+      "train": 4836,
+      "valid": 1380,
+      "test": 690
+    },
+    "objects_per_class": {
+      "train": 806,
+      "valid": 230,
+      "test": 115
+    }
+  },
+  "hardware": "NVIDIA GeForce RTX 5060 Laptop GPU (8 GB), PyTorch 2.11.0+cu128, Ultralytics 8.4.190, Python 3.11.3",
+  "cnn": {
+    "params": 423046,
+    "input": "224x224 RGB crop",
+    "baseline_test": {
+      "accuracy": 0.7246,
+      "weighted_precision": 0.7324,
+      "weighted_recall": 0.7246,
+      "weighted_f1": 0.7241,
+      "stopped_epoch": 13,
+      "best_epoch": 8
+    },
+    "tuned_best_config": {
+      "lr": 0.001,
+      "dropout": 0.2,
+      "weight_decay": 0.0001,
+      "best_epoch": 50,
+      "best_val_loss": 0.4909,
+      "best_val_accuracy": 0.8406
+    },
+    "tuned_test": {
+      "accuracy": 0.8188,
+      "weighted_precision": 0.82,
+      "weighted_recall": 0.82,
+      "weighted_f1": 0.82,
+      "macro_f1": 0.82
+    }
+  },
+  "yolo": {
+    "baseline_yolo11m": {
+      "params_fused": 20034658,
+      "gflops": 67.8,
+      "epochs": 40,
+      "train_hours": 3.179,
+      "val": {
+        "P": 0.941,
+        "R": 0.881,
+        "mAP50": 0.949,
+        "mAP50_95": 0.815
+      },
+      "inference_ms": 7.3
+    },
+    "tuned_best": {
+      "model": "yolo11n",
+      "lr0": 0.0003,
+      "weight_decay": 0.0005,
+      "epochs": 25,
+      "train_hours": 0.558,
+      "params_fused": 2598266,
+      "gflops": 6.4,
+      "val": {
+        "P": 0.946,
+        "R": 0.914,
+        "mAP50": 0.958,
+        "mAP50_95": 0.831
+      },
+      "test": {
+        "P": 0.9482,
+        "R": 0.9126,
+        "F1": 0.9301,
+        "mAP50": 0.9641,
+        "mAP50_95": 0.825
+      },
+      "test_inference_ms": 2.9
+    }
+  }
+}

@@ -1,0 +1,8 @@
+model,class,images,instances,precision,recall,mAP50,mAP50_95
+tune_2_yolo11n (best.pt),all,477,690,0.948,0.913,0.964,0.825
+tune_2_yolo11n (best.pt),Garbage_Bag,87,115,0.927,0.861,0.931,0.784
+tune_2_yolo11n (best.pt),Glass,110,115,0.965,0.952,0.991,0.874
+tune_2_yolo11n (best.pt),Paper_Bag,96,115,0.943,0.87,0.947,0.788
+tune_2_yolo11n (best.pt),Pet_Bottle,107,115,0.96,0.939,0.965,0.834
+tune_2_yolo11n (best.pt),Plastic_Bag,89,115,0.928,0.887,0.963,0.851
+tune_2_yolo11n (best.pt),can,83,115,0.965,0.966,0.988,0.818

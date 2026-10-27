@@ -1,0 +1,7 @@
+metric,cnn_tuned_test,yolo11n_tuned_test
+Precision (weighted / mean),0.82,0.9482
+Recall (weighted / mean),0.82,0.9126
+F1-score,0.82,0.9301
+Accuracy (crops),0.8188,
+mAP@50,,0.9641
+mAP@50-95,,0.825

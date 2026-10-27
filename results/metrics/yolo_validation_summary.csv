@@ -1,0 +1,5 @@
+run,class,images,instances,precision,recall,mAP50,mAP50_95
+baseline_yolo11m,all,959,1380,0.941,0.881,0.949,0.815
+tune_1_yolo11n,all,959,1380,0.937,0.897,0.948,0.811
+tune_2_yolo11n,all,959,1380,0.946,0.914,0.958,0.831
+tune_3_yolo11n,all,959,1380,0.937,0.903,0.948,0.807

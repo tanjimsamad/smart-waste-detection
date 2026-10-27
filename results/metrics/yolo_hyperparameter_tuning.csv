@@ -1,0 +1,4 @@
+config,model,lr0,weight_decay,epochs,best_val_mAP50_95,best_epoch
+1,yolo11n,0.001,0.0005,25,0.81135,25
+2,yolo11n,0.0003,0.0005,25,0.83067,25
+3,yolo11n,0.001,0.001,25,0.80683,25
